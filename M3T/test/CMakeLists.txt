@@ -6,7 +6,7 @@ if (USE_GTEST)
 
     # Libraries
     # =========================================================================
-    find_package(GTest 1.7.0 REQUIRED)
+    find_package(GTest CONFIG 1.7.0 REQUIRED)
     include_directories(SYSTEM ${GTEST_INCLUDE_DIRS})
 
     # Define headers and sources
@@ -31,5 +31,5 @@ if (USE_GTEST)
     # Define target
     # =========================================================================
     add_executable(gtest_run ${SOURCES} ${HEADERS})
-    target_link_libraries(gtest_run PUBLIC m3t ${GTEST_BOTH_LIBRARIES})
+    target_link_libraries(gtest_run PUBLIC m3t GTest::gtest GTest::gtest_main)
 endif ()
