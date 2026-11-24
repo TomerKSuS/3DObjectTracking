@@ -24,8 +24,8 @@ Also read the specification the author worked from (the algorithm from `cv-pose-
 
 ## Verify, don't guess
 
-- Build and run the tests in Bash where you can (for example `cmake -S M3T -B build -DUSE_AZURE_KINECT=OFF -DUSE_REALSENSE=OFF && cmake --build build -j && ctest --test-dir build`). Turn on warnings and sanitizers (`-fsanitize=address,undefined`) when hunting memory bugs.
-- When you suspect a bug, prove it: point to the exact line, give a concrete input or sequence that triggers it, and where practical write a small reproducer or failing test in a scratch location.
+- Build and run the tests in Bash where you can (for M3T: `cmake -S M3T -B M3T/build -DUSE_AZURE_KINECT=OFF -DUSE_REALSENSE=OFF && cmake --build M3T/build -j && (cd M3T/build/test && ./gtest_run)`; M3T's tests are not registered with CTest, so a `ctest` run that finds no tests and exits with 0 proves nothing). Turn on warnings and sanitizers (`-fsanitize=address,undefined`) when hunting memory bugs.
+- When you suspect a bug, prove it: point to the exact line, give a concrete input or sequence that triggers it, and where practical write a small reproducer or failing test in a scratch directory outside the project tree (create it via Bash).
 - If you cannot build or run something, say so and mark the finding as unverified. Never report a bug you have not reasoned through concretely, and never report code as passing when you did not run it.
 
 ## Conflicts: what you may change yourself
