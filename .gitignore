@@ -1,0 +1,6 @@
+# Visual Studio per-user and cache folders, at any depth
+**/.vs/
+
+# Build output (CMake build trees, Visual Studio CMake "out" folders), at any depth
+**/build/
+**/out/
