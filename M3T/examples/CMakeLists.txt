@@ -39,6 +39,9 @@ target_link_libraries(run_generated_tracker PUBLIC m3t)
 add_executable(run_pen_paper_demo run_pen_paper_demo.cpp)
 target_link_libraries(run_pen_paper_demo PUBLIC m3t)
 
+add_executable(run_webcam_calibration webcam_calibration.cpp)
+target_link_libraries(run_webcam_calibration PUBLIC m3t)
+
 add_executable(constraint_convergence constraint_convergence.cpp)
 target_link_libraries(constraint_convergence PUBLIC m3t)
 

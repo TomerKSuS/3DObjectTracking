@@ -10,6 +10,7 @@
 #ifdef USE_AZURE_KINECT
 #include <m3t/azure_kinect_camera.h>
 #endif
+#include <m3t/webcam_color_camera.h>
 #include <m3t/basic_depth_renderer.h>
 #include <m3t/body.h>
 #include <m3t/camera.h>
@@ -978,6 +979,10 @@ inline bool GenerateConfiguredTracker(
           configfile_path, fs, "AzureKinectColorCamera", &color_camera_ptrs))
     return false;
 #endif
+
+  if (!ConfigureObjectsMetafileRequired<WebcamColorCamera>(
+          configfile_path, fs, "WebcamColorCamera", &color_camera_ptrs))
+    return false;
 
   // Configure depth cameras
   std::vector<std::shared_ptr<DepthCamera>> depth_camera_ptrs;

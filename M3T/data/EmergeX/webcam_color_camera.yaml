@@ -1,0 +1,9 @@
+%YAML:1.2
+calibration_path: "webcam_calibration.yaml"
+device_index: 1
+width: 1280
+height: 720
+fps: 60
+disable_autofocus: 1
+focus: 0
+undistort_alpha: 0.0

@@ -1,0 +1,49 @@
+%YAML:1.2
+WebcamColorCamera:
+  - name: webcam_color
+    metafile_path: "webcam_color_camera.yaml"
+
+Body:
+  - name: ambu
+    metafile_path: "ambu_body.yaml"
+
+RendererGeometry:
+  - name: renderer_geometry
+    bodies: [ambu]
+
+RegionModel:
+  - name: ambu_region_model
+    metafile_path: "ambu_region_model.yaml"
+    body: ambu
+
+RegionModality:
+  - name: ambu_region_modality
+    # metafile_path: "region_modality.yaml"
+    body: ambu
+    color_camera: webcam_color
+    region_model: ambu_region_model
+
+NormalColorViewer:
+  - name: color_viewer
+    color_camera: webcam_color
+    renderer_geometry: renderer_geometry
+
+Link:
+  - name: ambu_link
+    body: ambu
+    modalities: [ambu_region_modality]
+
+Optimizer:
+  - name: ambu_optimizer
+    root_link: ambu_link
+
+StaticDetector:
+  - name: static_detector
+    metafile_path: "ambu_detector.yaml"
+    optimizer: ambu_optimizer
+
+Tracker:
+  - name: tracker
+    viewers: [color_viewer]
+    detectors: [static_detector]
+    optimizers: [ambu_optimizer]

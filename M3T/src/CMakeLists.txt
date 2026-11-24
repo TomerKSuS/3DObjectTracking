@@ -33,7 +33,9 @@ set(SOURCES
         refiner.cpp
         publisher.cpp
         subscriber.cpp
-        tracker.cpp)
+        tracker.cpp
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Added scripts:
+	webcam_color_camera.cpp)
 
 set(HEADERS 
         ../include/m3t/common.h
@@ -67,7 +69,10 @@ set(HEADERS
         ../include/m3t/publisher.h
         ../include/m3t/subscriber.h
         ../include/m3t/tracker.h
-        ../include/m3t/generator.h)
+        ../include/m3t/generator.h
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Added scripts
+	../include/m3t/webcam_color_camera.h
+)
 
 if (USE_AZURE_KINECT)
     list(APPEND SOURCES azure_kinect_camera.cpp)

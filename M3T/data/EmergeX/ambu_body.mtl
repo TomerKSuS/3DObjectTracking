@@ -1,0 +1,46 @@
+# Blender 5.1.0 MTL File: 'None'
+# www.blender.org
+
+newmtl Ambu
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_d C:/Google Drive/Work/Simbionix/2024/Singapore/Textures/Ambu/FROM_SP/251103/Ambu_002_Ambu_BaseMap.png
+map_Bump -bm 1.000000 C:/Google Drive/Work/Simbionix/2024/Singapore/Textures/Ambu/FROM_SP/251103/Ambu_002_Ambu_Normal.png
+
+newmtl Ambu_Bag
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_d C:/Google Drive/Work/Simbionix/2024/Singapore/Textures/Ambu/FROM_SP/251103/Ambu_002_Ambu_BaseMap.png
+map_Bump -bm 1.000000 C:/Google Drive/Work/Simbionix/2024/Singapore/Textures/Ambu/FROM_SP/251103/Ambu_002_Ambu_Normal.png
+
+newmtl Ambu_Mask
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.472727
+illum 9
+map_Bump -bm 1.000000 C:/Google Drive/Work/Simbionix/2024/Singapore/Textures/Ambu/FROM_SP/251103/Ambu_002_Ambu_Normal.png
+
+newmtl Ambu_Plastic
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_d C:/Google Drive/Work/Simbionix/2024/Singapore/Textures/Ambu/FROM_SP/251103/Ambu_002_Ambu_BaseMap.png
+map_Bump -bm 1.000000 C:/Google Drive/Work/Simbionix/2024/Singapore/Textures/Ambu/FROM_SP/251103/Ambu_002_Ambu_Normal.png
